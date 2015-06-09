@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  category: MyString
+  price: 1
+  initial_stock: 1
+  current_stock: 1
+
+two:
+  name: MyString
+  description: MyText
+  category: MyString
+  price: 1
+  initial_stock: 1
+  current_stock: 1
