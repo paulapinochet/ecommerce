@@ -15,7 +15,6 @@ class ProductsController < ApplicationController
       format.js
     end
   end
-  end
 
   # GET /products/1
   # GET /products/1.json
@@ -81,3 +80,4 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :category, :price, :initial_stock, :current_stock, :imagen)
     end
+end
