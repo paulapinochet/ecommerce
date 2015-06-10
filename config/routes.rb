@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
+
   devise_for :users
-  resources :products do 
-    resources :purchases, only: [:new, :show]
-    
-  end
+  resources :products
 
   root 'products#index'
+
+  get 'addtocart/:product_id', to: 'purchases#add_to_cart', as: 'add_to_cart'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
